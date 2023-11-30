@@ -1,0 +1,68 @@
+{
+  "msg": "操作成功",
+  "code": 200,
+  "datas": [
+    {
+      "path": "system-manage",
+      "visible": 0,
+      "component": "Layout",
+      "menuName": "系统管理",
+      "menuType": 0,
+      "icon": "system",
+      "subMenus": [
+        {
+          "path": "user",
+          "visible": 0,
+          "component": "system-manage/user-manage/index",
+          "menuName": "用户管理",
+          "icon": "user",
+          "menuType": 0
+        },
+        {
+          "path": "role",
+          "visible": 0,
+          "component": "system-manage/role-manage/index",
+          "menuName": "角色管理",
+          "icon": "peoples",
+          "menuType": 0
+        },
+        {
+          "name": "menu",
+          "path": "menu",
+          "visible": 0,
+          "component": "system-manage/menu-manage/index",
+          "menuName": "菜单管理",
+          "icon": "tree-table",
+          "menuType": 0
+        },
+        {
+          "name": "log",
+          "path": "log",
+          "visible": 0,
+          "component": "ParentView",
+          "menuName": "日志管理",
+          "icon": "log",
+          "menuType": 0,
+          "subMenus": [
+            {
+              "path": "post",
+              "visible": 0,
+              "component": "system-manage/post/index",
+              "menuName": "岗位管理",
+              "icon": "post",
+              "menuType": 0
+            },
+            {
+              "path": "notice",
+              "visible": 0,
+              "component": "system-manage/notice/index",
+              "menuName": "公告管理",
+              "icon": "message",
+              "menuType": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
